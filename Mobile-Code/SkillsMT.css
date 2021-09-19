@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*This is for landscape mode*/
+@media only screen and (orientation:landscape) {
+    .hidden-MSG h1{
+        display: flex;
+        visibility: visible;
+        position: absolute;
+        font-family: 'Economica',sans-serif;
+        font-size: 80px;
+        color: black;
+        z-index: 5;
+        left: 18%;
+        margin-top: -30px;
+    }
+    body{
+        visibility: hidden;
+        background-image: url("../Images/Rotate.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(105,105,105, 0.4);
+        margin-top: -950px;
+        z-index: 10;
+    }
+    .block-menu{
+        visibility: hidden;
+    }
+    .block-menu li a{
+        visibility: hidden;
+    }
+    .front, .back{
+        visibility: hidden;
+    }
+    .three-d{
+        visibility: hidden;
+    }
+}
+
+
+/*Simple modifications*/
+.hidden-MSG{
+    font-size: 0px;
+    z-index: -2;
+}
+
+#menu-Mar{
+    margin-top: 20px;
+}
+
+/*Grid Creation*/
+.grid-creation{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 48vh 70vh 60vh 35vh;
+	height: 213vh;
+	width: 100%;
+}
+
+/*Header Content*/
+.header-content{
+    font-family: 'Economica',sans-serif;
+    font-size: 730%;
+    color: #88bbd6;
+    text-shadow: 4px 4px #A9A9A9;
+    overflow: hidden;
+    font-style: italic;
+	padding: 3%;
+}
+
+.header-grid{
+	background:  #E9E9E9;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Introduction Container*/
+.intro-grid{
+	background-color: #88bbd6;
+    height: 100%;
+    width: 100%;
+}
+
+.intro-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#intro-header{
+    font-family: 'Economica',sans-serif;
+    text-decoration: underline;
+    font-size: 4.5vh;
+}
+
+#intro-body{
+    font-family: 'Montserrat',sans-serif;
+    padding: 2.5%;
+    font-size: 2.1vh;
+}
+
+#intro-body2{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.3vh;
+}
+
+.box-1-textlinks{
+    font-family: 'Montserrat',sans-serif;
+	text-decoration: none;
+	font-size: 2.3vh;
+	color: #ce2029;
+}
+
+.box-1-textlinks:hover{
+    font-family: 'Montserrat',sans-serif;
+	text-decoration: underline;
+	font-size: 2.4vh;
+	color:#ce2029;
+	font-style: italic;
+	font-weight: bolder;
+
+}
+
+.intro-flex li{
+    padding: 1%;
+}
+
+/*Skills Section*/
+.skills-grid{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.skills-grid-1{
+    background-color: #E9E9E9;
+}
+#skills-header{
+    font-family: 'Economica',sans-serif;
+    font-size: 4.5vh;
+    text-decoration: underline;
+    padding-bottom: 2%;
+}
+
+.skills-text li{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.3vh;
+}
+
+
+/*Slider for the skills*/
+.skills-content-slider{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: #E9E9E9;
+	align-items: center;
+	justify-content: center;
+}
+
+.marquee{
+	width: 90%;
+	height: 80%;
+	overflow: hidden;
+	position: relative;
+}
+
+.marquee:before, .marquee:after{
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.marquee:before {
+    left: 0;
+	background: -webkit-linear-gradient(to right, #E9E9E9 0%, transparent 100%);
+}
+
+.marquee:after {
+    right: 0;
+    background: -webkit-linear-gradient(to right, #E9E9E9 0%, transparent 100%);
+}
+
+.marquee-content {
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 20s linear infinite;
+}
+
+
+@keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% {transform: translateX(-224.2vw); }
+}
+
+.marquee-content li {
+    width: 25%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+	align-items: center;   
+}
+
+#png1{
+	background-image: url("../Images/C++.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#png2{
+	background-image: url("../Images/azure.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#png3{
+	background-image: url("Java.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#png4{
+	background-image: url("../Images/Python.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+}
+
+#png5{
+	background-image: url("../Images/HTML5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 58%;
+}
+
+#png6{
+	background-image: url("../Images/CSS.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+#png7{
+	background-image: url("../Images/javascript.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 62%;
+}
+
+#png8{
+	background-image: url("../Images/powershell.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+#png9{
+	background-image: url("../Images/Octocat.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+}
+
+#png10{
+	background-image: url("../Images/solidworks.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+}
+
+
+
+
+/*Resume Section*/
+.resume-grid{
+	background-color: #88bbd6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.resume-header{
+    font-family: 'Economica',sans-serif;
+    text-decoration: underline;
+    font-size: 4.5vh;
+    font-weight: lighter;
+}
+
+.resume-body{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.2vh;
+    padding: 2%;
+}
+
+.act-resume{
+    height: auto;
+    width: 150%;
+    padding-top: 2%;
+    transform: translateX(-15%);
+}
+
+
+
+/*This is the menu code*/   
+.block-menu {
+	display: block;
+    background:  #E9E9E9;
+    width: auto;
+    text-align: center;
+}
+
+.block-menu li {
+    display: inline-block;
+}
+
+.block-menu li a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-family: 'Economica', sans-serif;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 40px;
+	font-size: 80px;
+    padding: 30px 20px;
+    font-weight: 500;
+    font-style: italic;     
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box, 
+	.three-d:focus .three-d-box {
+		transform: translateZ(-50px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-50px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.front {
+	transform: rotatex(0deg) translatez(50px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(50px);
+	color: black;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #E9E9E9;
+	padding: 15px 10px;
+	color: #88BBD6;
+	pointer-events: none;
+    box-sizing: border-box;
+}
+
+#menu-Mar{
+	margin-top: 20px;
+}

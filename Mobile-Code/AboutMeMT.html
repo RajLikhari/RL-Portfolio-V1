@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <link href = "./AboutMeMT.css" type = "text/css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="../Images/favicon_io/favicon.ico">
+	<meta charset="utf-8"/>
+    <title>About Raj Likhari</title>
+</head>
+
+<!--This is the flipping menu bar-->
+<body>
+<ul class="block-menu">
+	<li id="menu-Mar"><a href="./indexMT.html" class="three-d">
+		HOME
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">HOME</span>
+			<span class="back">HOME</span>
+		</span>
+	</a></li>
+	<li id="menu-Mar"><a href="./AboutMeMT.html" class="three-d">
+		ABOUT ME
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">ABOUT ME</span>
+			<span class="back">ABOUT ME</span>
+		</span>
+	</a></li>
+	<li id="menu-Mar"><a href="./SkillsMT.html" class="three-d">
+		SKILLS
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">SKILLS</span>
+			<span class="back">SKILLS</span>
+		</span>
+	</a></li>
+	<li><a href="./ExpMT.html" class="three-d">
+		EXPERIENCE
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">EXPERIENCE</span>
+			<span class="back">EXPERIENCE</span>
+		</span>
+    </a></li>
+    <li><a href="./PhotoMT.html" class="three-d">
+		PHOTOGRAPHY
+		<span aria-hidden="true" class="three-d-box">
+			<span class="front">PHOTOGRAPHY</span>
+			<span class="back">PHOTOGRAPHY</span>
+		</span>
+	</a></li>
+</ul>
+
+
+<!--This is the background image and text-->
+<div class="grid-container">
+	<div class="box1">
+		<h1>About Raj</h1>
+	</div>
+	<div class="box2">
+		<ul>
+			<li class="aboutmeslides"><img src="../Images/RajL.jpg"></li>
+			<li class="aboutmeslides"><img src="../Images/MnD.jpg"></li>
+			<li class="aboutmeslides"><img src="../Images/RajnVaish.jpg"></li>
+			<li class="box2-intro">About Me</li>
+			<li id="box2-body">Hi there! My name is Raj Likhari, I am an aspiring computer engineer, aggie student, and an iPhone photographer. Currently, I’m a junior at Texas A&M University – College station majoring in Computer Engineering with a focus on Electrical. Some of my interests are nanotechnology, computer hardware, and IoT. Also, I have an interest in Cloud Computing, I am currently certified in both AZ-204: Azure Developer Associate and AZ-900: Azure Fundamentals, I hope to expand my skills to AWS and Google Cloud. Some of my hobbies include taking and editing pictures, staying up to date with the latest technology, and thinking of projects that I could use to help some modern-day problems! One day, I hope to work at a company where I can build and develop the software for new-age computer processors and hardware, till then ill keep building my skills. Thanks for visiting my website and stay awhile!</li>
+		</ul>
+	</div>
+	<div class="box3">
+		<div class="box3-flex1">
+			<h1 class="box3-content4">Lets Connect!</h1>
+		</div>
+		<div id="box3-grid1">
+			<div class="box3-content1">
+				<a href="https://www.linkedin.com/in/rajlikhari"><img class="box3-image1" src="../Images/linked.png"></a>
+			</div>
+			<div class="box3-content2">
+				<a href="https://github.com/RajLikhari"><img class="box3-image2" src="../Images/Octocat.png"></a>
+			</div>
+			<div class="box3-content3">
+				<a href="https://www.instagram.com/sikhmemephotography/"><img class="box3-image3" src="../Images/insta.png"></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+
+<div class="hidden-MSG">
+    <h1>Please Use Portrait Mode!</h1>
+</div>
+
+
+
+<script>
+    var slideIndex = 0;
+        imageslider();
+
+        function imageslider() {
+            var i;
+            var x = document.getElementsByClassName("aboutmeslides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(imageslider, 5000); // Change image every 4 seconds    
+    }
+</script>
+
+    
